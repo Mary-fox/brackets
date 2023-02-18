@@ -1,7 +1,7 @@
 module.exports = function check(str, bracketsConfig) {
   const brackets = [].concat(...bracketsConfig);
-  const open = brackets.filter(( _, i) => i % 2 === 0);
-  const close = brackets.filter((_, i) => i % 2 !== 0);
+  const open = brackets.filter((item, index) => index % 2 === 0);
+  const close = brackets.filter((item, index) => index % 2 !== 0);
 
 
     let stack = [];
